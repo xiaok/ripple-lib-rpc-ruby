@@ -1,19 +1,20 @@
-require File.expand_path('../ripple/error', __FILE__)
-require File.expand_path('../ripple/configuration', __FILE__)
-require File.expand_path('../ripple/api', __FILE__)
-require File.expand_path('../ripple/models/path', __FILE__)
-require File.expand_path('../ripple/models/amount', __FILE__)
-require File.expand_path('../ripple/models/transaction', __FILE__)
-require File.expand_path('../ripple/models/account_info', __FILE__)
-require File.expand_path('../ripple/models/account_lines', __FILE__)
-require File.expand_path('../ripple/client', __FILE__)
-require File.expand_path('../ripple/extensions/federation', __FILE__)
-require File.expand_path('../ripple/abstract', __FILE__)
-require File.expand_path('../ripple/request', __FILE__)
-require File.expand_path('../ripple/response', __FILE__)
-# require File.expand_path('../ripple/websocket', __FILE__)
+require 'ripple/error'
+require 'ripple/configuration'
+require 'ripple/api'
+require 'ripple/models/path'
+require 'ripple/models/amount'
+require 'ripple/models/transaction'
+require 'ripple/models/account_info'
+require 'ripple/models/account_lines'
+require 'ripple/client'
+require 'ripple/extensions/federation'
+require 'ripple/abstract'
+require 'ripple/request'
+require 'ripple/response'
 
-module Ripple
+module Ripple; end
+
+class << Ripple
   extend Configuration
 
   # Alias for Ripple::Client.new
