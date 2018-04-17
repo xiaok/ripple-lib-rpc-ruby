@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
     'http://rubygems.org/gems/ripple_lib_rpc_ruby'
   s.license       = 'MIT'
 
-  s.files = `git ls-files`.split("\n")
+  s.files = Dir["{lib}/**/*.rb", "bin/*", "LICENSE", "*.md"]
   s.require_paths = ['lib']
 
   s.add_runtime_dependency 'faraday_middleware'
